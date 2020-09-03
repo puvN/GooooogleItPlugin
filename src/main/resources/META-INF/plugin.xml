@@ -1,0 +1,23 @@
+<idea-plugin>
+    <id>com.puvn.GooooogleItPlugin</id>
+    <name>GooooogleIt</name>
+    <vendor email="eugeniylukin@gmail.com" url="https://www.linkedin.com/in/puvn/">puvN</vendor>
+
+    <description>A plugin to google selected text from IDE</description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>com.intellij.modules.platform</depends>
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+        <action id="com.puvn.GoogleAction" class="com.puvn.GoogleAction" text="GooooogleItPlugin"
+                description="Main plugin action">
+            <keyboard-shortcut keymap="$default" first-keystroke="shift ctrl G"/>
+        </action>
+    </actions>
+</idea-plugin>
