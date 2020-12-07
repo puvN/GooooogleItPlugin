@@ -4,7 +4,7 @@ plugins {
 }
 
 group 'com.puvn'
-version '1.0.1'
+version '1.0.3'
 
 repositories {
     mavenCentral()
@@ -16,14 +16,12 @@ dependencies {
 
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
+    updateSinceUntilBuild false
     version '2020.2'
 }
 patchPluginXml {
     changeNotes """
-      Initial version<br>
-      - Press Ctrl+Shift+G to google selected 
-      text in editor or console<br>
-      - If no text is selected - there will be a warning<br>
+      added compatibility with other idea versions
       """
 }
 
